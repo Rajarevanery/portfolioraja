@@ -1,6 +1,6 @@
 .mask {
   position: absolute;
-  mask-image: url("mask.svg");
+  mask-image: url("../../assets/mask.svg");
   background: whitesmoke;
   mask-repeat: no-repeat;
   mask-size: 50px;
