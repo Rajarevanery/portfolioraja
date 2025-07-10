@@ -1,191 +1,289 @@
 import React from "react";
 import shuush from "../assets/shush.jpeg";
+import wasteless from "../assets/wasteless.png";
+import wordneko from "../assets/wordneko.png";
+import koncohiling from "../assets/koncohiling.png";
 import rustoff from "../assets/rustoff.png";
 import habits from "../assets/habits.png";
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Showcase = () => {
   return (
     <div className="w-screen h-screen bg-white">
-      <h1 className="font-header text-[15vw] flex justify-center items-center">
-        <span className="w-20 h-20 bg-black"></span>SHOWCASE
+      <h1 className="font-header text-6xl md:text-8xl flex justify-center items-center gap-4 mt-10">
+        <span className="w-6 h-6 md:w-10 md:h-10 bg-black inline-block"></span>
+        <span>SHOWCASE</span>
       </h1>
-      <div className="grid grid-cols-12 grid-rows-4 gap-10 p-10 text-center">
+
+      <div className="grid grid-cols-12 gap-6 p-10 text-center">
+        {/* Total Projects */}
         <motion.div
-          initial={{ rotate: 10, opacity: 0 }}
-          whileInView={{ rotate: 0, opacity: 1 }}
+          initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="border border-black/20 col-span-3 row-span-4 flex justify-center items-center"
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="col-span-12 md:col-span-4 bg-black text-white p-10 rounded-lg flex flex-col justify-center items-center"
         >
-          <span className="text-8xl font-header -skew-x-6">20+</span>
-        </motion.div>
-        <motion.div
-          initial={{ rotate: -10, opacity: 0 }}
-          whileInView={{ rotate: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.8 }}
-          className="border border-black/20 col-span-9 row-span-4 flex justify-center items-center"
-        >
-          <span className="text-7xl font-tiny font-semibold skew-x-6">
-            TOTAL
+          <span className="text-6xl md:text-7xl font-bold font-header">
+            20+
           </span>
+          <p className="mt-4 text-lg md:text-xl font-tiny">Total Projects</p>
         </motion.div>
+
+        {/* Latest Projects Title */}
         <motion.div
-          initial={{ rotate: 5, opacity: 0 }}
-          whileInView={{ rotate: 0, opacity: 1 }}
+          initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 1.2 }}
-          className="border border-black/20 col-span-9 row-span-4 flex justify-center items-center"
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="col-span-12 md:col-span-8 bg-white border border-black/20 p-10 rounded-lg flex flex-col justify-center items-center"
         >
-          <span className="text-7xl font-header font-semibold">PROJECTS</span>
+          <span className="text-4xl md:text-6xl font-header">
+            Latest Projects
+          </span>
+          <p className="mt-4 text-base md:text-lg font-tiny text-black/70">
+            A few highlights from my recent work
+          </p>
         </motion.div>
+
         <motion.div
-          initial={{ rotate: -5, opacity: 0 }}
-          whileInView={{ rotate: 0, opacity: 1 }}
+          initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 1.5 }}
-          className="border border-black/20 col-span-3 row-span-4 flex justify-center items-center"
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="col-span-12 md:col-span-6 bg-white border border-black/20 p-10 rounded-lg flex flex-col justify-center items-center"
         >
-          <span className="text-7xl font-header">MADE</span>
+          <span className="text-3xl md:text-5xl font-header">Handcrafted</span>
+          <p className="mt-2 text-base md:text-lg font-tiny text-black/70">
+            By me - from design to deployment.
+          </p>
         </motion.div>
+
         <motion.div
-          initial={{ rotate: 15, opacity: 0 }}
-          whileInView={{ rotate: 0, opacity: 1 }}
+          initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 1.7 }}
-          className="border border-black/20 col-span-3 row-span-8 flex justify-center items-center"
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="col-span-12 md:col-span-6 bg-white border border-black/20 p-10 rounded-lg flex flex-col justify-center items-center"
         >
-          <span className="text-7xl font-header">HAND</span>
-        </motion.div>
-        <motion.div
-          initial={{ rotate: 5, opacity: 0 }}
-          whileInView={{ rotate: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 1.9 }}
-          className="border border-black/20 col-span-3 row-span-4 flex justify-center items-center"
-        >
-          <span className="text-7xl font-header">BY</span>
-        </motion.div>
-        <motion.div
-          initial={{ rotate: -10, opacity: 0 }}
-          whileInView={{ rotate: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 2.1 }}
-          className="border border-black/20 col-span-6 row-span-4 flex justify-center items-center"
-        >
-          <span className="text-7xl font-tiny">HAND</span>
-        </motion.div>
-        <motion.div
-          initial={{ rotate: 5, opacity: 0 }}
-          whileInView={{ rotate: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 2.3 }}
-          className="border border-black/20 col-span-3 row-span-4 flex justify-center items-center text-7xl font-header"
-        >
-          3 LATEST
-        </motion.div>
-        <motion.div
-          initial={{ rotate: -5, opacity: 0 }}
-          whileInView={{ rotate: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 2.5 }}
-          className="border border-black/20 col-span-6 row-span-4 flex justify-center items-center text-7xl font-header"
-        >
-          <span className="font-tiny">PROJECT SHOWCASED</span>
+          <span className="text-3xl md:text-5xl font-header">
+            4 Latest Projects
+          </span>
+          <p className="mt-2 text-base md:text-lg font-tiny text-black/70">
+            Featured in this portfolio
+          </p>
         </motion.div>
       </div>
+
       <h1 className="flex justify-center items-center text-7xl font-header my-10">
         PROJECTS (LATEST)
       </h1>
 
-      <div className="p-4 flex flex-col gap-10 justify-center items-center border border-black/20 rounded container mx-auto">
-        <div className="relative flex justify-center items-center group">
-          <motion.img
-            initial={{ rotate: 10, opacity: 0 }}
-            whileInView={{ rotate: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 2 }}
-            viewport={{ once: true }}
-            src={shuush}
-            alt=""
-            className="w-[100%] col-span-2 rounded-lg group-hover:brightness-50 transition-all group-hover:blur-[3px]"
-          />
-          <div className="absolute opacity-0 group-hover:opacity-100 transition-all text-white text-center">
-            <h1 className="text-white font-header text-xl font-semibold">
-              Shuushlofi!
-            </h1>
-            <p className="w-[30vw] text-balance font-paragraphtwo">
-              Web app, untuk bagi kamu untuk belajar!, tambahkan favorit
-              lagumu/playlistmu, set-up timer/pomodoro timer untuk meningkatkan
-              efektivitas kamu!, dan track/add task kamu!.
-            </p>
+      <div className="p-4 flex flex-col gap-6">
+        {/* Konco Hiling */}
+        <div className="border border-black/20 rounded-lg p-6 hover:bg-gray-50 transition-colors">
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/3">
+              <img
+                src={koncohiling}
+                alt="Konco Hiling Travel Platform"
+                className="w-full h-auto rounded-lg object-cover"
+              />
+            </div>
+            <div className="md:w-2/3">
+              <h3 className="font-semibold text-lg mb-2">
+                Konco Hiling - Travel Booking Platform
+              </h3>
+              <p className="text-gray-700 mb-3">
+                Built a full-stack travel booking platform with tour bookings,
+                car rentals, destination browsing, and travel blogs.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  React.js
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  React Query
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Tailwind CSS
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Node.js
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Express
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Prisma
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  MySQL
+                </span>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="w-screen bg-black/20 h-[0.5px]" />
-        <div className="w-screen bg-black/20 h-[0.5px]" />
-        <div className="relative flex justify-center items-center group">
-          <motion.img
-            initial={{ rotate: -10, opacity: 0 }}
-            whileInView={{ rotate: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 2 }}
-            viewport={{ once: true }}
-            src={rustoff}
-            className=" relative rounded-lg group-hover:blur-[3px] transition-all group-hover:brightness-50"
-            alt=""
-          />
-          <div className="absolute opacity-0 group-hover:opacity-100 transition-all text-white text-center">
-            <h1 className="text-white font-header text-xl font-semibold">
-              Rust Offline Notificator (Rustoff)
-            </h1>
-            <p className="w-[30vw] text-balance font-paragraphtwo">
-              Web app, untuk track online/offline player di suatu (rust) server,
-              akan display destkop notification jika sudah 0/5 player, export
-              data dan juga lihat map.
-            </p>
+
+        {/* Wasteless Eats */}
+        <div className="border border-black/20 rounded-lg p-6 hover:bg-gray-50 transition-colors">
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/3">
+              <img
+                src={wasteless}
+                alt="Wasteless Eats App"
+                className="w-full h-auto rounded-lg object-cover"
+              />
+            </div>
+            <div className="md:w-2/3">
+              <h3 className="font-semibold text-lg mb-2">
+                Wasteless Eats - Food Sustainability App
+              </h3>
+              <p className="text-gray-700 mb-3">
+                Android app connecting users with surplus food and reusable
+                items, featuring ML-based food quality detection.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Kotlin
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Jetpack Compose
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Firebase
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  TensorFlow
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Google Maps API
+                </span>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="w-screen bg-black/20 h-[0.5px]" />
-        <div className="w-screen bg-black/20 h-[0.5px]" />
-        <div className="w-screen bg-black/20 h-[0.5px]" />
-        <h1 className="font-header text-[9vw] flex justify-between items-center col-span-2">
-          <span className="w-20 h-20 bg-black"></span>Latest Project
-          <span className="w-20 h-20 bg-black rounded-full"></span>
-        </h1>{" "}
-        <div className="w-screen bg-black/20 h-[0.5px]" />
-        <div className="relative flex justify-center items-center group">
-          <motion.img
-            initial={{ rotate: 10, opacity: 0 }}
-            whileInView={{ rotate: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 2 }}
-            viewport={{ once: true }}
-            src={habits}
-            alt=""
-            className=" relative rounded-lg group-hover:blur-[3px] transition-all group-hover:brightness-50"
-          />
-          <div className="absolute opacity-0 group-hover:opacity-100 transition-all text-white text-center">
-            <h1 className="text-white font-header text-xl font-semibold">
-              Habit Quest
-            </h1>
-            <p className="w-[30vw] text-balance font-paragraphtwo">
-              Web app, track habit dengan orang lain, buat kategori(habit) untuk
-              orang lain dan kamu untuk track habit dengan exp dan level sistem
-              dan leaderboard!.
-            </p>
+
+        {/* Wordneko */}
+        <div className="border border-black/20 rounded-lg p-6 hover:bg-gray-50 transition-colors">
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/3">
+              <img
+                src={wordneko}
+                alt="Wordneko Game"
+                className="w-full h-auto rounded-lg object-cover"
+              />
+            </div>
+            <div className="md:w-2/3">
+              <h3 className="font-semibold text-lg mb-2">
+                Wordneko - Word Game Platform
+              </h3>
+              <p className="text-gray-700 mb-3">
+                Gamified web app with word games, voice input, and personalized
+                word tracking with real-time leaderboards.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  React.js
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Tailwind CSS
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Supabase
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Web Speech API
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  React Query
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Shuushlofi */}
+        <div className="border border-black/20 rounded-lg p-6 hover:bg-gray-50 transition-colors">
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/3">
+              <img
+                src={shuush}
+                alt="Shuushlofi App"
+                className="w-full h-auto rounded-lg object-cover"
+              />
+            </div>
+            <div className="md:w-2/3">
+              <h3 className="font-semibold text-lg mb-2">
+                Shuushlofi - Productivity App
+              </h3>
+              <p className="text-gray-700 mb-3">
+                Web app combining Pomodoro timers, note-taking, and music
+                playback for student productivity.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  React.js
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Redux
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Django REST
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  PostgreSQL
+                </span>
+                <span className="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                  Howler.js
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="w-screen bg-black/20 h-[0.5px]" />
 
-      <div className="w-screen h-screen bg-white flex justify-center items-center text-black">
+      <div className="w-screen h-screen bg-white flex flex-col justify-center items-center text-black gap-8">
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 1.5, delay: 1 }}
-          className="font-header text-6xl"
+          transition={{ duration: 1.5, delay: 0.5 }}
+          className="font-header text-6xl mb-6"
         >
           Thank you.
         </motion.h1>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 1.5 }}
+          className="flex gap-8 text-2xl"
+        >
+          <a
+            href="https://github.com/Rajarevanery"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-600 transition-colors flex flex-row items-center gap-2"
+            title="GitHub"
+          >
+            <FaGithub />
+            RajaRevanery
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rajarevanery/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-600 transition-colors flex flex-row gap-2 items-center"
+            title="LinkedIn"
+          >
+            <FaLinkedin />
+            <p>rajarevanery</p>
+          </a>
+        </motion.div>
       </div>
     </div>
   );

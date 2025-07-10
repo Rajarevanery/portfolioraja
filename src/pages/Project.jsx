@@ -93,58 +93,6 @@ const Project = () => {
   };
   return (
     <>
-      {/* <div className="w-screen p-10 bg-white h-fit text-slate-200">
-        <style jsx>{`
-          .grid-background {
-            background-image: linear-gradient(
-                90deg,
-                rgba(255, 255, 255, 0.05) 1px,
-                transparent 1px
-              ),
-              linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-            background-size: 40px 40px;
-          }
-        `}</style>
-        <div className="flex flex-row items-center justify-between">
-          <h1 className="flex flex-row overflow-hidden font-tiny text-7xl 2xl:text-9xl">
-            {dev.map((item, i) => (
-              <motion.p
-                variants={fadeInAnimationVariants}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true }}
-                custom={i}
-                className="text-black"
-              >
-                {item}
-              </motion.p>
-            ))}
-          </h1>
-          <div className="flex flex-col">
-            <motion.h2 className="overflow-hidden text-4xl text-black font-tiny 2xl:text-6xl ">
-              <motion.p
-                initial={{ y: "100%" }}
-                whileInView={{ y: 0 }}
-                transition={{ delay: 0.1, duration: 0.5, type: "spring" }}
-                viewport={{ once: true }}
-              >
-                20+ Total Projects
-              </motion.p>
-            </motion.h2>
-            <h2 className="overflow-hidden text-4xl text-black font-tiny 2xl:text-6xl">
-              <motion.p
-                initial={{ y: "100%" }}
-                whileInView={{ y: 0 }}
-                transition={{ delay: 1, duration: 0.5, type: "spring" }}
-                viewport={{ once: true }}
-              >
-                5 <span className="px-2 rounded-lg bg-white/20">Preview</span>{" "}
-                Projects
-              </motion.p>
-            </h2>
-          </div>
-        </div>
-      </div> */}
       <div ref={targetRef} className="relative h-[300vh] bg-white p-10">
         <div className="sticky top-0 flex items-center h-screen overflow-hidden">
           <motion.div style={{ x }} className="flex gap-4">
@@ -158,11 +106,12 @@ const Project = () => {
                 <p className="font-tiny w-[10ch]">Hello, im Raja!</p>
                 <div className="flex flex-col gap-2">
                   <p className="w-[40ch]">
-                    Sejak 2019 saya sudah menerjun ke dunia coding, dan dari
-                    semua itu ada banyak pengalaman menarik.
+                    Since 2019, Ive been diving into the world of coding, and
+                    along the way, Ive had many exciting experiences.
                   </p>
                   <p className="w-[30ch]">
-                    Karena perjalanan saya, saya bisa sampai sini!
+                    Its because of this journey that Ive made it to where I am
+                    today!
                   </p>
                 </div>
               </div>
@@ -178,12 +127,15 @@ const Project = () => {
                 <h1 className="flex flex-row items-center gap-2 text-[1.5vw] font-header">
                   {" "}
                   <span className="bg-black w-7 h-7"></span>{" "}
-                  <span>FULLSTACK & CLOUD</span>
+                  <span>FULLSTACK / WEB DEVELOPMENT</span>
                 </h1>
                 <p className="font-paragraphtwo w-[40ch] text-[1vw]">
-                  Pembuatan website dengan NEXTJS, dan MERN Stack (serta db
-                  supa/fire base), dan juga menggunakan AWS Service memberikan
-                  saya full-control untuk membuat website saya.
+                  I specialize in building modern fullstack web applications
+                  using technologies like React, Tailwind CSS, Node.js, and
+                  Prisma. Ive worked on real-world projects involving
+                  authentication, dynamic content, admin tools, blog systems,
+                  and booking platforms all designed with performance, UX, and
+                  scalability in mind.
                 </p>
                 <span className="text-2xl font-tiny">[01]</span>
               </div>
@@ -193,9 +145,9 @@ const Project = () => {
                   <span className="bg-black w-7 h-7"></span> <span>MOBILE</span>
                 </h1>
                 <p className="font-paragraphtwo w-[40ch] text-[1vw]">
-                  Pembuatan mobile dengan menggunakan Android Studio (kotlin)
-                  dan materialUI serta jetpack compose memungkinkan saya membuat
-                  mobile yang memberikan best user experience!
+                  Developed mobile apps using Android Studio (Kotlin) with
+                  Jetpack Compose and Material UI, as well as Flutter, to create
+                  smooth, intuitive, and responsive user experiences.
                 </p>
                 <span className="text-2xl font-tiny">[02]</span>
               </div>
@@ -208,9 +160,9 @@ const Project = () => {
                   <span>TECHNOLOGIES</span>
                 </h1>
                 <p className="font-paragraphtwo w-[40ch] text-[1vw]">
-                  ReactJS, NEXTJS, Tailwind, Boostrap, MaterialUI, AWS, ThreeJS,
-                  Spline, Figma, Kotlin, Framer Motion, Django, MongoDB,
-                  Supabase, Firebase, MySQL.
+                  React.js, Tailwind CSS, Node.js, Express, Prisma, React Query,
+                  Supabase, Firebase, Django, PostgreSQL, MySQL, Redux Toolkit,
+                  Framer Motion, Web Speech API, Vite, Figma.
                 </p>
                 <span className="text-2xl font-tiny">[03]</span>
               </div>

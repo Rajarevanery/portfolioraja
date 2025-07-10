@@ -3,7 +3,6 @@ import "./css/maskedcursor.css";
 import { motion } from "framer-motion";
 import { WiStars } from "react-icons/wi";
 
-
 function MaskedCursor() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
@@ -77,21 +76,21 @@ function MaskedCursor() {
         <span>& CLOUD ENGINEER</span>
         <div className="relative top-10 2xl:top-20 text-center flex flex-col justify-center items-center text-lg">
           <div className="flex flex-row justify-between text-[#ECFB5C] w-72 relative font-tiny cursor-default text-lg 2xl:text-xl">
-            <p>[Sedikit tentang</p>
-            <p>saya]</p>
+            <p>[Quick intro</p>
+            <p>about myself]</p>
           </div>
 
           <p className="text-slate-200 flex flex-col 2xl:text-xl relative top-10 font-paragraphtwo font-normal text-sm">
             <span className="text-end">
-              Saya adalah seorang{" "}
-              <span className="text-yellow-200 font-tiny">Developer</span>{" "}
+              I’m a <span className="text-yellow-200 font-tiny">Developer</span>{" "}
               <br />
             </span>{" "}
             <span className="text-start">
-              yang-perjalanannya dimulai dari 3 tahun lalu sampai sekarang.
+              who began this journey 3 years ago and continues to grow ever
+              since.
             </span>
             <span className="text-start">
-              terus dan menerus untuk mengembangkan skill Web, AI, Mobile.
+              Passionate about building in Web, and Mobile development.
             </span>
           </p>
         </div>

@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import raja from "../assets/me.png";
+import rajadua from "../assets/PASFoto.png";
 
 const About = () => {
   const element = useRef(null);
@@ -23,13 +24,13 @@ const About = () => {
           ref={element}
           style={{ scale: textScale, opacity: textOpacity }}
         >
-          Saya adalah seorang developer asal dari Indonesia, yang sekarang
-          sedang berkuliah di Universitas Sultan Ageng Tirtayasa.
+          I am a developer from Indonesia currently pursuing a degree in
+          Informatics at Universitas Sultan Ageng Tirtayasa.
         </motion.p>
       </div>
       <motion.img
-        src={raja}
-        className="w-[200px] h-[250px] sticky top-[8%] xl:top-[20%] rounded-lg"
+        src={rajadua}
+        className="w-[200px] h-[300px] sticky top-[8%] xl:top-[20%] rounded-lg"
         alt=""
         style={{ y: imageY }}
       />

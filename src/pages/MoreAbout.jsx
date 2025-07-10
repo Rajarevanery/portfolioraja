@@ -17,16 +17,22 @@ const MoreAbout = () => {
   return (
     <div className="bg-white w-screen h-[200vh] text-black flex flex-col items-center">
       <div className="sticky top-0 h-[100vh] flex flex-col justify-center items-center">
-        <h1 className="font-tiny text-4xl">Kenapa saya memilih menjadi dev?</h1>
+        <h1 className="font-header font-bold text-4xl text-center">
+          the WHY of Becoming a Developer
+        </h1>
         <motion.p
-          className="text-2xl 2xl:text-3xl w-[40ch] text-center font-subheader font-bold"
+          className="text-xl 2xl:text-2xl w-[40ch] text-justify font-subheader font-bold"
           ref={element}
           style={{ scale: textScale, opacity: textOpacity }}
         >
-          Karena saya yang awalnya hobi main game maupun itu MMO, FPS, Rhytm
-          Game, Survival, Casual. Karena Informatika berinteraksi dengan
-          komputer makanya saya memilih informatika karena ekspetasi sama
-          serunya seperti bermain game😅
+          I have a strong background and interest in gaming, which sparked my
+          curiosity in computer science and led me to explore the world of
+          software development. Along the way, ive built experience in fullstack
+          and mobile development, but I discovered that my strongest skill and
+          greatest passion is in frontend development. I enjoy crafting
+          responsive, accessible, and engaging user interfaces using modern web
+          technologies, and Im always eager to keep learning and building
+          impactful digital experiences.
         </motion.p>
       </div>
     </div>
